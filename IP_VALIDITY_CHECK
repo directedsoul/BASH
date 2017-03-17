@@ -1,2 +1,12 @@
 #This bash program checks the validity of the ip address.Hope this helps
+#!/bin/bash
 
+ip="256.10.10.100"
+
+if [[ "$ip" =~ (([01]{,1}[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.([01]{,1}[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.([01]{,1}[0-9]{1,2}|2[0-4][0-9]|25[0-5])\.([01]{,1}[0-9]{1,2}|2[0-4][0-9]|25[0-5]))$ ]]; then
+  echo "success"
+else
+  echo "fail"
+fi
+     
+  
